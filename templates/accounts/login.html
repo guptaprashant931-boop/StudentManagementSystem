@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form action="" method="POST" class="max-w-sm mx-auto bg-white p-6 shadow">
+    {% csrf_token %}
+    <input name="username" placeholder="Username" class="border w-full mb-2 p-2">
+    <input type="password" name="password" placeholder="Password" class="border w-full mb-2 p-2">
+    <button class="bg-blue-500 text-white px-4 py-2 w-full">Login</button>
+</form>
+{% endblock %}
